@@ -1,3 +1,12 @@
+local keymap = vim.api.nvim_set_keymap
+local opts = { silent = true }
+
+keymap("i", "<C-z>", "<Plug>(coc-snippets-expand-jump)", opts)
+keymap("n", "rn", "<Plug>(coc-rename)", opts)
+keymap("n", "ac", "<Plug>(coc-codeaction)", opts)
+keymap("n", "ts", "<Plug>(coc-translator-p)", opts)
+keymap("n", "qf", "<Plug>(coc-fix-current)", opts)
+
 vim.g.coc_global_extensions = {
     'coc-actions',
     'coc-clangd',
