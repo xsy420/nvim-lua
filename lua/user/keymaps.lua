@@ -67,3 +67,27 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
+-- Split Window
+keymap("n", "sk", ":set nosplitbelow<CR>:split<CR>:set splitbelow<CR>", opts)
+keymap("n", "sj", ":set splitbelow<CR>:split<CR>", opts)
+keymap("n", "sh", ":set nosplitright<CR>:vsplit<CR>:set splitbelow<CR>", opts)
+keymap("n", "sl", ":set splitright<CR>:vsplit<CR>", opts)
+
+-- Tab Maps
+keymap("n", "tn", ":tabnext<CR>", opts)
+keymap("n", "tN", ":tabnew<CR>", opts)
+keymap("n", "tp", ":tabprevious<CR>", opts)
+keymap("n", "tc", ":tabclose<CR>", opts)
+
+-- Close Window
+keymap("n", "<C-c>", ":qa<CR>", opts)
+
+-- Remove Clusor Map
+keymap("n", "<Up>", "<Nop>", opts)
+keymap("n", "<Down>", "<Nop>", opts)
+keymap("n", "<Left>", "<Nop>", opts)
+keymap("n", "<Right>", "<Nop>", opts)
+keymap("i", "<Up>", "<Nop>", opts)
+keymap("i", "<Down>", "<Nop>", opts)
+keymap("i", "<Left>", "<Nop>", opts)
+keymap("i", "<Right>", "<Nop>", opts)

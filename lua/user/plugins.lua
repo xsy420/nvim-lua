@@ -97,6 +97,37 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
 
+  -- COC
+  use {
+        "neoclide/coc.nvim",
+        run = "yarn install",
+  }
+
+  -- trailingwhitespace
+  -- 快速去行尾空格
+  use 'bronson/vim-trailing-whitespace'
+
+  -- API 调试
+  use 'diepm/vim-rest-console'
+
+  -- Markdown
+  use {
+    "iamcco/markdown-preview.nvim",
+    run = "cd app && yarn install",
+  }
+
+  -- UndoTree
+
+  use "mbbill/undotree"
+
+  --
+  use "tpope/vim-surround"
+  use "jiangmiao/auto-pairs"
+  -- 自动补全单引号，双引号等
+  use "Raimondi/delimitMate"
+  -- 自动补全html/xml标签
+  use "docunext/closetag.vim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

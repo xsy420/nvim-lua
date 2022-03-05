@@ -95,6 +95,13 @@ local mappings = {
   },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
+  ["W"] = { "<cmd>FixWhitespace<CR>", "Fix Whitespace" },
+
+  r = {
+    name = "Compile And Run",
+    f = { ":call CompileAndRun()<cr>", "Run As File Type" },
+    m = { ":w<cr>:set splitbelow<cr>:split<cr>:res -10<cr>:term make<cr>", "Make" },
+  },
 
   p = {
     name = "Packer",
