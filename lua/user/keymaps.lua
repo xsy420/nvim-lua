@@ -73,12 +73,6 @@ keymap("n", "sj", ":set splitbelow<CR>:split<CR>", opts)
 keymap("n", "sh", ":set nosplitright<CR>:vsplit<CR>:set splitbelow<CR>", opts)
 keymap("n", "sl", ":set splitright<CR>:vsplit<CR>", opts)
 
--- Tab Maps
-keymap("n", "tn", ":tabnext<CR>", opts)
-keymap("n", "tN", ":tabnew<CR>", opts)
-keymap("n", "tp", ":tabprevious<CR>", opts)
-keymap("n", "tc", ":tabclose<CR>", opts)
-
 -- Close Window
 keymap("n", "<C-c>", ":qa<CR>", opts)
 
