@@ -34,6 +34,22 @@ vim.api.nvim_exec(
           :term scala %
         endif
       endfunction
+
+      function! AddHeader(type)
+      let s:package = split("".expand("%"), "/")
+      let Type = ""
+      if a:type == "Annotation"
+      let Type = "@interface"
+      else
+      let Type = tolower(a:type)
+      end
+      call append(0, "package ".expand(join(s:package[3:-2], ".")).expand(";"))
+      call append(2, "public ".expand(Type).expand(" ").expand("%:t:r"))
+      call append(3, "{")
+      call append(4, "")
+      call append(5, "}")
+      execute("normal! Gk:w\<cr>")
+      endfunction
       ]],
   true
 )

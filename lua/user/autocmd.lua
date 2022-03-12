@@ -14,6 +14,8 @@ vim.api.nvim_exec(
     autocmd FileType html,css EmmetInstall
 
     autocmd FileType java silent! nmap <leader><F5> :CocCommand java.debug.vimspector.start<CR>
+
+""    autocmd FileType java silent! :call AddHeader()<CR>
   ]],
   true
 )

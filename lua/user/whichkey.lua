@@ -87,7 +87,7 @@ local mappings = {
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
   ["q"] = { "<cmd>q!<CR>", "Quit" },
-  ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
+  ["C"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
   ["f"] = {
     "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
@@ -97,10 +97,23 @@ local mappings = {
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   ["W"] = { "<cmd>FixWhitespace<CR>", "Fix Whitespace" },
 
+  c = {
+    name = "COC",
+    a = {"<cmd>CocAction<CR>", "CocAction"},
+    r = {"<Plug>(coc-rename)", "Rename"},
+    y = {"<cmd>CocCommand yank.clean<cr>", "Yank Clean"},
+  },
+  d = {
+    name = "Debug",
+    c = {"", "C"},
+    j = {"", "Java"},
+    p = {"", "Python"},
+  },
   r = {
     name = "Compile And Run",
     f = { ":call CompileAndRun()<cr>", "Run As File Type" },
     m = { ":w<cr>:set splitbelow<cr>:split<cr>:res -10<cr>:term make<cr>", "Make" },
+    d = { ":w<cr>:set splitbelow<cr>:split<cr>:res -10<cr>:term python3 manage.py runserver<cr>", "Django" },
   },
 
   p = {

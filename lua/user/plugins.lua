@@ -66,24 +66,6 @@ return packer.startup(function(use)
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
 
-  -- cmp plugins
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
-  use "hrsh7th/cmp-nvim-lsp"
-
-  -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-
-  -- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
-  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
-
   -- Telescope
   use "nvim-telescope/telescope.nvim"
 
@@ -128,6 +110,26 @@ return packer.startup(function(use)
   -- 自动补全html/xml标签
   use "docunext/closetag.vim"
 
+  -- 代码自动对齐
+  use "godlygeek/tabular"
+
+  --输入法切换
+--  use "lyokha/vim-xkbswitch"
+
+  -- Java
+  use "artur-shaik/vim-javacomplete2"
+  -- HTML
+  use "othree/html5.vim"
+  use "mattn/emmet-vim"
+  use "elzr/vim-json"
+  use "neoclide/jsonc.vim"
+  use "alvan/vim-closetag"
+
+  -- QuickPeek
+  use {
+    "AndrewRadev/quickpeek.vim",
+    branch = "neovim-support"
+  }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
