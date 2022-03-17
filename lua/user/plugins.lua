@@ -8,7 +8,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     "clone",
     "--depth",
     "1",
-    "git://github.com/wbthomason/packer.nvim",
+    "https://github.com/wbthomason/packer.nvim",
     install_path,
   }
   print "Installing packer close and reopen Neovim..."
@@ -31,9 +31,6 @@ end
 
 -- Have packer use a popup window
 packer.init {
-  git = {
-      default_url_format = 'git://github.com/%s.git'
-  },
   display = {
     open_fn = function()
       return require("packer.util").float { border = "rounded" }
