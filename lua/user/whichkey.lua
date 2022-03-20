@@ -116,6 +116,11 @@ local mappings = {
     d = { ":w<cr>:set splitbelow<cr>:split<cr>:res -10<cr>:term python3 manage.py runserver<cr>", "Django" },
   },
 
+  n = {
+    name = "NERDCommenter",
+    c = { "<Plug>NERDCommenterComment" , "Comment" },
+    u = { "<Plug>NERDCommenterUncomment" , "Comment" },
+  },
   p = {
     name = "Packer",
     c = { "<cmd>PackerCompile<cr>", "Compile" },
