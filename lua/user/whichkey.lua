@@ -119,7 +119,7 @@ local mappings = {
   n = {
     name = "NERDCommenter",
     c = { "<Plug>NERDCommenterComment" , "Comment" },
-    u = { "<Plug>NERDCommenterUncomment" , "Comment" },
+    u = { "<Plug>NERDCommenterUncomment" , "Uncomment" },
   },
   p = {
     name = "Packer",
