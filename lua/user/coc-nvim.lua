@@ -29,7 +29,6 @@ vim.g.coc_global_extensions = {
     'coc-lists',
     'coc-omnisharp',
     'coc-prettier',
-    'coc-pyright',
     'coc-python',
     'coc-sh',
     'coc-snippets',
