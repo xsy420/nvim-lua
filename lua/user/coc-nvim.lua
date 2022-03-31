@@ -2,6 +2,8 @@ local keymap = vim.api.nvim_set_keymap
 local opts = { silent = true }
 
 keymap("i", "<C-z>", "<Plug>(coc-snippets-expand-jump)", opts)
+keymap("n", "gd", "<Plug>(coc-definition)", opts)
+keymap("n", "gr", "<Plug>(coc-references)", opts)
 keymap("n", "rn", "<Plug>(coc-rename)", opts)
 keymap("n", "ac", "<Plug>(coc-codeaction)", opts)
 keymap("n", "ts", "<Plug>(coc-translator-p)", opts)
@@ -13,8 +15,6 @@ vim.g.coc_global_extensions = {
     'coc-cmake',
     'coc-css',
     'coc-docker',
-    'coc-emmet',
-    'coc-explorer',
     'coc-flutter-tools',
     'coc-git',
     'coc-gitignore',
@@ -24,17 +24,13 @@ vim.g.coc_global_extensions = {
     'coc-html-css-support',
     'coc-java',
     'coc-java-debug',
-    'coc-jest',
     'coc-json',
-    'coc-lists',
     'coc-omnisharp',
-    'coc-prettier',
     'coc-python',
     'coc-sh',
     'coc-snippets',
     'coc-sql',
     'coc-syntax',
-    'coc-tasks',
     'coc-translator',
     'coc-tsserver',
     'coc-vimlsp',
