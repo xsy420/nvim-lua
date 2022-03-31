@@ -16,6 +16,8 @@ vim.api.nvim_exec(
     autocmd FileType java silent! nmap <leader><F5> :CocCommand java.debug.vimspector.start<CR>
 
 ""    autocmd FileType java silent! :call AddHeader()<CR>
+
+    autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
   ]],
   true
 )
