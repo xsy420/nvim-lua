@@ -123,11 +123,6 @@ return packer.startup(function(use)
   use "neoclide/jsonc.vim"
   use "alvan/vim-closetag"
 
-  -- QuickPeek
-  use {
-    "AndrewRadev/quickpeek.vim",
-    branch = "neovim-support"
-  }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
