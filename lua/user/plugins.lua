@@ -31,6 +31,9 @@ end
 
 -- Have packer use a popup window
 packer.init {
+  git = {
+    default_url_format = 'https://github.com.cnpmjs.org/%s' -- add chinese github image
+  },
   display = {
     open_fn = function()
       return require("packer.util").float { border = "rounded" }
