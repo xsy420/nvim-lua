@@ -80,11 +80,21 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
 
-  -- COC
+    -- cmp plugins
+  -- use "hrsh7th/nvim-cmp" -- The completion plugin
+  use "neovim/nvim-lspconfig"
   use {
-        "neoclide/coc.nvim",
-        run = "yarn install",
+    "hrsh7th/nvim-cmp",
+    -- commit = "dbc72290295cfc63075dab9ea635260d2b72f2e5",
   }
+  use "hrsh7th/cmp-buffer" -- buffer completions
+  use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "L3MON4D3/LuaSnip"
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-emoji"
+  use "hrsh7th/cmp-nvim-lua"
 
   -- trailingwhitespace
   -- 快速去行尾空格
