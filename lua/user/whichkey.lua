@@ -97,12 +97,6 @@ local mappings = {
   ["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
   ["W"] = { "<cmd>FixWhitespace<CR>", "Fix Whitespace" },
 
-  c = {
-    name = "COC",
-    a = {"<cmd>CocAction<CR>", "CocAction"},
-    r = {"<Plug>(coc-rename)", "Rename"},
-    y = {"<cmd>CocCommand yank.clean<cr>", "Yank Clean"},
-  },
   d = {
     name = "Debug",
     c = {"", "C"},
