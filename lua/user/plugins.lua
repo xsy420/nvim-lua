@@ -119,6 +119,7 @@ return packer.startup(function(use)
 
   -- Java
   use "artur-shaik/vim-javacomplete2"
+  use "mikelue/vim-maven-plugin"
   -- HTML
   use "othree/html5.vim"
   use "mattn/emmet-vim"

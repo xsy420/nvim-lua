@@ -184,6 +184,12 @@ local mappings = {
       "Workspace Symbols",
     },
   },
+  m = {
+    name = "Maven",
+    c = {"<cmd>Mvn clean<cr>", "clean"},
+    p = {"<cmd>Mvn package<cr>", "package"},
+    v = {"<cmd>Mvn verify<cr>", "verify"}
+  },
   s = {
     name = "Search",
     b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
