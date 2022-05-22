@@ -82,7 +82,6 @@ return packer.startup(function(use)
 
     -- cmp plugins
   -- use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "neovim/nvim-lspconfig"
   use {
     "hrsh7th/nvim-cmp",
     -- commit = "dbc72290295cfc63075dab9ea635260d2b72f2e5",
@@ -136,6 +135,22 @@ return packer.startup(function(use)
   use "elzr/vim-json"
   use "neoclide/jsonc.vim"
   use "alvan/vim-closetag"
+
+    -- LSP
+  use "neovim/nvim-lspconfig" -- enable LSP
+  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+  use "filipdutescu/renamer.nvim"
+  use "simrat39/symbols-outline.nvim"
+  use "ray-x/lsp_signature.nvim"
+  use "b0o/SchemaStore.nvim"
+  use {
+    "folke/trouble.nvim",
+    cmd = "TroubleToggle",
+  }
+  use "github/copilot.vim"
+  use "RRethy/vim-illuminate"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
