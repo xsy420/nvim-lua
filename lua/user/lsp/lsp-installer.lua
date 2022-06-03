@@ -15,8 +15,11 @@ local servers = {
   "csharp-ls",
   "vuels",
   "eslint",
-  "zk",
 }
+
+if vim.fn.has 'linux' == 1 then
+  servers[12] = 'zk'
+end
 
 local settings = {
   ensure_installed = servers,
