@@ -208,13 +208,6 @@ local mappings = {
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
 
-  T = {
-    name = "Tabs",
-    n = { "<cmd>tabnext<cr>", "Next" },
-    N = { "<cmd>tabnew<cr>", "New" },
-    p = { "<cmd>tabprevious<cr>", "Previous" },
-    c = { "<cmd>tabclose<cr>", "Close" },
-  }
 }
 
 which_key.setup(setup)
