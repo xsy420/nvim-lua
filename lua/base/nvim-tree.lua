@@ -77,3 +77,8 @@ nvim_tree.setup {
     require_confirm = true,
   },
 }
+
+-- Auto close the NvimTree when no buffer left except NvimTree_
+vim.cmd [[
+  autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
+]]

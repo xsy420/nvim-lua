@@ -85,6 +85,13 @@ telescope.setup {
     -- }
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
+    find_files = {
+      hidden = true,
+    },
+    live_grep = {
+      --@usage don't include the filename in the search results
+      only_sort_text = true,
+    },
   },
   extensions = {
     -- Your extension configuration goes here:
@@ -92,5 +99,14 @@ telescope.setup {
     --   extension_config_key = value,
     -- }
     -- please take a look at the readme of the extension you want to configure
+    fzf = {
+            fuzzy = true, -- false will only do exact matching
+            override_generic_sorter = true, -- Override the generic sorter
+            override_file_sorter = true, -- Override the file sorter
+            case_mode = "smart_case", -- Or "ignore_case" or "respect_case"
+            -- The default case_mode is "smart_case"
+        },
   },
 }
+
+telescope.load_extension('fzf')

@@ -42,6 +42,7 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
+keymap("i", "jj", "j<ESC>a", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -60,13 +61,6 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
--- Terminal --
--- Better terminal navigation
--- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
--- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
--- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
--- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
 -- Split Window
 keymap("n", "sk", ":set nosplitbelow<CR>:split<CR>:set splitbelow<CR>", opts)
 keymap("n", "sj", ":set splitbelow<CR>:split<CR>", opts)
@@ -75,13 +69,3 @@ keymap("n", "sl", ":set splitright<CR>:vsplit<CR>", opts)
 
 -- Close Window
 keymap("n", "<C-c>", ":qa<CR>", opts)
-
--- Remove Clusor Map
--- keymap("n", "<Up>", "<Nop>", opts)
--- keymap("n", "<Down>", "<Nop>", opts)
--- keymap("n", "<Left>", "<Nop>", opts)
--- keymap("n", "<Right>", "<Nop>", opts)
--- keymap("i", "<Up>", "<Nop>", opts)
--- keymap("i", "<Down>", "<Nop>", opts)
--- keymap("i", "<Left>", "<Nop>", opts)
--- keymap("i", "<Right>", "<Nop>", opts)
