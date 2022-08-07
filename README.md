@@ -17,3 +17,9 @@ install ripgrep to apply Find Text
 ```
 sudo pacman -S ripgrep
 ```
+
+install xclip to apply system clipboard
+
+```
+sudo pacman -S xclip
+```
